@@ -1,19 +1,19 @@
-# 🚀 Advanced RAG Document Assistant
+#  Advanced RAG Document Assistant
 
-A high-accuracy RAG (Retrieval-Augmented Generation) document assistant that supports multiple document formats and provides 95%+ accuracy in question answering.
+A high-accuracy RAG (Retrieval-Augmented Generation) document assistant that supports multiple document formats.
 
-## ✨ Features
+## Features
 
-- 📄 **Multi-Document Support**: PDF, Word (.docx), and Text files
-- 🧠 **Advanced Chunking**: Intelligent text splitting with metadata
-- 🔍 **High-Accuracy Retrieval**: Similarity search with score thresholds
-- 🤖 **Gemini AI Integration**: Powered by Google's Gemini for accurate responses
-- 📊 **Real-time Metrics**: Processing statistics and document information
-- 🎯 **95%+ Accuracy**: Optimized for precise answers
-- 💬 **Modern Chat Interface**: ChatGPT-like user experience
-- 🏷️ **Rich Metadata**: UUID-based chunk identification and tracking
+- **Multi-Document Support**: PDF, Word (.docx), and Text files
+- **Advanced Chunking**: Intelligent text splitting with metadata
+- **High-Accuracy Retrieval**: Similarity search with score thresholds
+- **Gemini AI Integration**: Powered by Google's Gemini for accurate responses
+- **Real-time Metrics**: Processing statistics and document information
+- **Accuracy**: Optimized for precise answers
+- **Modern Chat Interface**: ChatGPT-like user experience
+- **Rich Metadata**: UUID-based chunk identification and tracking
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: Streamlit
 - **Document Processing**: 
@@ -26,13 +26,13 @@ A high-accuracy RAG (Retrieval-Augmented Generation) document assistant that sup
 - **Chunking**: LangChain RecursiveCharacterTextSplitter
 - **Metadata**: UUID for unique chunk identification
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Python 3.8+
 - Google Gemini API key
 - Git
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone and Setup
 
@@ -65,7 +65,7 @@ streamlit run app.py
 
 The application will be available at `http://localhost:8501`
 
-## 🔧 Configuration
+##  Configuration
 
 ### Document Processing Parameters
 
@@ -85,7 +85,7 @@ Uses `sentence-transformers/all-MiniLM-L6-v2` for:
 - CPU compatibility
 - Multilingual support
 
-## 📖 Usage Guide
+##  Usage Guide
 
 ### 1. Upload Documents
 - Click "Choose documents" in the sidebar
@@ -108,7 +108,7 @@ Uses `sentence-transformers/all-MiniLM-L6-v2` for:
 - Page/paragraph references
 - High accuracy with context
 
-## 🏗️ Architecture
+##  Architecture
 
 ```
 ┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
@@ -129,7 +129,7 @@ Uses `sentence-transformers/all-MiniLM-L6-v2` for:
 └─────────────────┘    └──────────────────┘    └─────────────────┘
 ```
 
-## 🎯 Accuracy Features
+##  Accuracy Features
 
 ### Enhanced Retrieval
 - **Similarity Score Threshold**: Filters irrelevant chunks
@@ -146,7 +146,7 @@ Uses `sentence-transformers/all-MiniLM-L6-v2` for:
 - **Intelligent Splitting**: Preserves sentence boundaries
 - **UUID Tracking**: Unique identification for debugging
 
-## 📊 Document Types Supported
+##  Document Types Supported
 
 | Format | Extraction Method | Metadata |
 |--------|------------------|----------|
@@ -154,71 +154,6 @@ Uses `sentence-transformers/all-MiniLM-L6-v2` for:
 | Word (.docx) | python-docx | Paragraph numbers |
 | Text (.txt) | Text Loader | File information |
 
-## 🐳 Docker Deployment
-
-```bash
-# Build image
-docker build -t rag-assistant .
-
-# Run container
-docker run -p 8501:8501 --env-file .env rag-assistant
-```
-
-## ☁️ Cloud Deployment
-
-### Streamlit Cloud
-1. Push code to GitHub
-2. Connect to Streamlit Cloud
-3. Set `GOOGLE_API_KEY` in secrets
-
-### Heroku
-```bash
-heroku create your-app-name
-heroku config:set GOOGLE_API_KEY=your_key
-git push heroku main
-```
-
-## 🔍 Testing
-
-Test with various document types:
-
-```python
-# Test with PDF
-upload_pdf("research_paper.pdf")
-
-# Test with Word
-upload_docx("report.docx")
-
-# Test questions
-questions = [
-    "What is the main topic?",
-    "Summarize key findings",
-    "What are the conclusions?"
-]
-```
-
-## 🚨 Troubleshooting
-
-### Common Issues
-
-1. **API Key Error**:
-   - Verify Gemini API key is valid
-   - Check .env file format
-
-2. **Document Processing Error**:
-   - Ensure documents have readable text
-   - Check file format support
-
-3. **Low Accuracy**:
-   - Verify document quality
-   - Check question clarity
-   - Review context relevance
-
-4. **Memory Issues**:
-   - Reduce chunk size for large documents
-   - Process documents individually
-
-## 📝 Development
 
 ### Project Structure
 
@@ -237,19 +172,7 @@ rag-assistant/
 - **RAGAssistant**: Manages RAG pipeline and querying
 - **Metadata**: UUID-based tracking system
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create feature branch
-3. Make changes
-4. Test thoroughly
-5. Submit pull request
-
-## 📄 License
-
-MIT License - see LICENSE file for details
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - Google Gemini for powerful language understanding
 - LangChain for RAG framework
@@ -259,4 +182,4 @@ MIT License - see LICENSE file for details
 
 ---
 
-**🚀 Built for accuracy, speed, and reliability in document Q&A!**
+**Built for accuracy, speed, and reliability in document Q&A!**
